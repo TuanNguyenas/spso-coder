@@ -1,0 +1,77 @@
+.footer {
+  width: 1920px; 
+  height: 401px;
+  position: absolute; 
+  bottom: 0;
+  top: 1900px; 
+  left: 0; 
+  background-color: #4B90D0;
+  color: white; 
+  padding: 20px 30px; 
+  font-size: 16px; 
+  text-align: center; 
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 30px 30px 0 0; 
+}
+.footer .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  width: 437px; 
+  height: 64px; 
+  font-size: 57px;
+  font-weight: bold;
+  font-family: Roboto, sans-serif; 
+  line-height: 28.13px; 
+  text-align: center;
+  margin-left: 741px;
+}
+
+.footer .logo-container .logo-image {
+  width: 67px; 
+  height: auto; 
+}
+
+.footer .logo-container .logo-text {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 57px;
+  font-weight: bold;
+  line-height: 28.13px; 
+  text-align: center;
+  color: white; 
+}
+.footer .content {
+  width: 1019px; 
+  height: 220px; 
+  position: absolute; 
+  top: 177px; 
+  left: 518px; 
+  background-color: #4B90D0; 
+  color: white; 
+  padding: 20px; 
+  border-radius: 10px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: left;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.3px; 
+}
+
+
+.footer p {
+  margin: 10px 0; 
+  line-height: 1.5; 
+  display: block;
+}
+
+.footer a {
+  color: #ffcc00; 
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #ffd700;
+}

@@ -1,0 +1,70 @@
+.history {
+    position:absolute; 
+    width: 847px;
+    height: auto; 
+    top: 132px; 
+    left: 182px;
+    padding: 25px 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: flex-start; /* Căn theo chiều dọc nếu cần */
+  }
+.history .heading {
+    width: 847px;
+    height: 78px;
+    left: 182 px;
+    top: 132px;
+    font-size: 57px;
+    font-weight: bold;
+    line-height: 29.13px; 
+    text-align: center; 
+    
+    color: black; 
+    font-family: 'Roboto', sans-serif; 
+}
+.item {
+  width: 823px;               /* Fixed width */
+  height: 259px;               /* Adjust height according to content */
+  border-radius: 30px;        /* Rounded corners */
+  border: 1px solid #000;    /* Border with 1px width */
+  padding: 25px 10px;
+  text-align: left; 
+  color: black; 
+  gap: 10px;  
+}
+  /* .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+/* Kiểu chữ 1: Font Roboto đậm (Weight 700) */
+.style-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Độ dày của chữ */
+  font-size: 20px;  /* Kích thước chữ */
+  line-height: 28.13px; /* Khoảng cách dòng */
+  text-align: center; /* Canh giữa */
+}
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.list-container ul {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+/* Kiểu chữ 2: Font Roboto thường (Weight 400) */
+.style-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Độ dày của chữ */
+  font-size: 20px;  /* Kích thước chữ */
+  line-height: 28.13px; /* Khoảng cách dòng */
+  text-align: center; /* Canh giữa */
+}

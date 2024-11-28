@@ -81,7 +81,7 @@ function History() {
 
         <div className="history-content">
           <div className="history-left">
-            <div className="heading">LỊCH SỬ IN</div>
+            <div className="heading">Lịch sử in</div>
             <div className="search-bar">
             <input
                 type="text"

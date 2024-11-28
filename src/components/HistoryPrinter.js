@@ -67,7 +67,7 @@ function HistoryPrinter() {
 
         <div className="history-content">
           <div className="history-left">
-            <div className="heading">THÔNG TIN MÁY IN</div>
+            <div className="heading">Thông tin máy in</div>
             <div className="search-bar">
             <input
                 type="text"

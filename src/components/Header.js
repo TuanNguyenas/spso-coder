@@ -23,8 +23,8 @@ const Header = () => {
       <nav>
         <div className="menu-buttons">
         <Link to="/"><button>Trang chủ</button></Link> 
-        <Link to="/print"><button>Cấu hình in tài liệu</button></Link>
-        <Link to="/history"><button>Xem lịch sử</button></Link> 
+        <Link to="/"><button>Cấu hình in tài liệu</button></Link>
+        <Link to="/HistorySPSO"><button>Xem lịch sử</button></Link> 
         </div>
       </nav>
       {/* <div className="profile-icon">👤</div> */}

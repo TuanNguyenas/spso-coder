@@ -26,11 +26,11 @@
   .body {
     flex: 1;
     display: flex;
-   justify-content: space-between;
-   width: 100%;
-   align-items: center;
-   max-width: 1200px;
-   gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 1200px;
+    gap: 20px;
   }
   .button-content {
     flex: 1;

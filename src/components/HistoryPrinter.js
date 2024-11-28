@@ -105,7 +105,7 @@ function HistoryPrinter() {
                     </ul>
                     </div>
 
-                  <a href="/" className="history-link">Xem thêm</a>
+                  <a href="/HistoryPrinter" className="history-link">Xem thêm</a>
 
                 </div>
               ))}

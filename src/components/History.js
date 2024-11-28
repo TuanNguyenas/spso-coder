@@ -115,7 +115,7 @@ function History() {
                     </ul>
                   </div>
 
-                  <a href="/" className="history-link">Xem thêm</a>
+                  <a href="/HistoryStudent" className="history-link">Xem thêm</a>
 
                 </div>
               ))}

@@ -1,61 +1,47 @@
 import React, {useState} from "react";
 import Header from "./Header"; 
 import Footer from "./Footer"; 
-import logo from "../public/logo_BK1.png"
+import logo from "../public/printer.png"
 import "./History.css"; 
 
-function History() {
+function HistoryPrinter() {
   const [searchQuery, setSearchQuery] = useState("");
   const historyData = [
     {
-      name: "Nguyễn Văn A",
-      studentId: "1213",
-      remainingPages: 10,
-      confirmedDate: "Thứ Tư, 3 tháng 1 2024, 7:18 PM",
-      completedDate: "Thứ Tư, 3 tháng 1 2024, 7:40 PM",
-      printStatus: "Đang in",
-      uploadedFile: "#1234",
-      id: "1234",
-      pages: 25,
-    },
-    {
-      name: "Nguyễn Văn B",
-      studentId: "1214",
-      remainingPages: 15,
-      confirmedDate: "Thứ Năm, 4 tháng 1 2024, 8:00 AM",
-      completedDate: "Thứ Năm, 4 tháng 1 2024, 8:30 AM",
-      printStatus: "Hoàn thành",
-      uploadedFile: "#5678",
-      id: "5678",
-      pages: 30,
-    },
-    {
-      name: "Nguyễn Văn A",
-      studentId: "1213",
-      remainingPages: 10,
-      confirmedDate: "Thứ Tư, 3 tháng 1 2024, 7:18 PM",
-      completedDate: "Thứ Tư, 3 tháng 1 2024, 7:40 PM",
-      printStatus: "Đang in",
-      uploadedFile: "#1234",
-      id: "1234",
-      pages: 25,
-    },
-    {
-      name: "Nguyễn Văn B",
-      studentId: "1214",
-      remainingPages: 15,
-      confirmedDate: "Thứ Năm, 4 tháng 1 2024, 8:00 AM",
-      completedDate: "Thứ Năm, 4 tháng 1 2024, 8:30 AM",
-      printStatus: "Hoàn thành",
-      uploadedFile: "#5678",
-      id: "5678",
-      pages: 30,
-    }
+        campus: "Cơ sở 1",
+        status: "Hoạt động",
+        studentsUsed: 50,
+        printerCode: "1234"
+      },
+      {
+        campus: "Cơ sở 2",
+        status: "Đang bảo trì",
+        studentsUsed: 30,
+        printerCode: "5678"
+      },
+      {
+        campus: "Cả hai",
+        status: "Hoạt động",
+        studentsUsed: 80,
+        printerCode: "91011"
+      },
+      {
+        campus: "Cơ sở 1",
+        status: "Hoạt động",
+        studentsUsed: 50,
+        printerCode: "1234"
+      },
+      {
+        campus: "Cơ sở 2",
+        status: "Đang bảo trì",
+        studentsUsed: 30,
+        printerCode: "5678"
+      }
   ];
   const filteredData = historyData.filter(
     (item) =>
-      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.studentId.includes(searchQuery)
+      item.campus.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.printerCode.includes(searchQuery)
   );
 
   const data = {
@@ -81,39 +67,43 @@ function History() {
 
         <div className="history-content">
           <div className="history-left">
-            <div className="heading">LỊCH SỬ IN</div>
+            <div className="heading">THÔNG TIN MÁY IN</div>
             <div className="search-bar">
             <input
                 type="text"
-                placeholder="Tìm kiếm theo tên hoặc MSSV..."
+                placeholder="Tìm kiếm theo cơ sở hoặc tình trạng..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
             {filteredData.map((item, index) => (
                 <div key={index} className="item">
-                  <div className="info-container">
+                  <div className="list-container">
                     <ul className="info-list">
-                      <li>
-                        <span className="style-bold">Họ và tên: </span>
-                        <span className="style-regular">{item.name}</span>
-                      </li>
-                      <li>
-                        <span className="style-bold">MSSV: </span>
-                        <span className="style-regular">{item.studentId}</span>
-                      </li>
-                      <li>
-                        <span className="style-bold">Số trang còn lại: </span>
-                        <span className="style-regular">{item.remainingPages}</span>
-                      </li>
+                        <li>
+                        <span className="style-bold">Cơ sở: </span>
+                        <span className="style-regular">{item.campus}</span>
+                        </li>
+                        <li>
+                        <span className="style-bold">Mã máy in: </span>
+                        <span className="style-regular">{item.printerCode}</span>
+                        </li>
+                        <li>
+                        <span className="style-bold">Tình trạng: </span>
+                        <span className="style-regular">{item.status}</span>
+                        </li>
+                        <li>
+                        <span className="style-bold">Số sinh viên sử dụng: </span>
+                        <span className="style-regular">{item.studentsUsed}</span>
+                        </li>
                     </ul>
 
                     <ul className="avatar-list">
-                      <li className="avatar-container">
+                        <li>
                         <img src={logo} alt="Avatar" className="Avt" />
-                      </li>
+                        </li>
                     </ul>
-                  </div>
+                    </div>
 
                   <a href="/" className="history-link">Xem thêm</a>
 
@@ -200,4 +190,4 @@ function History() {
   );
 }
 
-export default History;
+export default HistoryPrinter;

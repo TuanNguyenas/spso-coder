@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/Report.css";
+import "./Report.css";
 
 const Report = () => {
   const data = {

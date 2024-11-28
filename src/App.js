@@ -1,23 +1,17 @@
 import React from "react";
-import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import History from "./components/History";
-import Report from "./components/Report";
-import Footer from "./components/Footer";
 import "./styles/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import HistorySPSO from "./components/History";
+import HistoryPrinter from "./components/HistoryPrinter";
 function App() {
   return (
-    <>
-      <Header />
-<div className="body">
-    <History />
-
-    <Report />
-</div>
-
-<Footer />
-    </>
+    <Router>
+    <Routes>
+        <Route path="/HistorySPSO" element={<HistorySPSO  />} />
+        <Route path="/HistoryPrinter" element={<HistoryPrinter  />} />
+    </Routes>
+</Router>
   );
 }
 

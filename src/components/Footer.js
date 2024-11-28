@@ -1,23 +1,26 @@
 import React from "react";
-import "./../styles/Footer.css";
+import "./Footer.css";
 import logo from "../public/logo_BK1.png"
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo-image" /> 
-        <span className="logo-text">HCMUT_SSPS</span>
+      <div className="footer-top">
+        <div className="footer-logo-title">
+            <img src={logo} alt="Logo" className="footer-logo" />
+            <span className="footer-title">HCMUT_SPSS</span>
+        </div>
       </div>
-      <div className="content">
-      <p>
-        Student Printing Service Officer <br />
-        Bất cứ thắc mắc kỹ thuật liên quan đến in ấn hoặc thanh toán trang in, sinh viên liên lạc<br />
-        Email: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br/>
-        ĐT (Tel.): xxxxxxxxxxxxxxxxxxxx
+      <div className="footer-bottom">
+        <p><strong>Student Printing Service Officer</strong></p>
+        <p>
+          Bất cứ trục trặc kỹ thuật liên quan đến in ấn hoặc thanh toán trang in.
+          Sinh viên liên lạc:
         </p>
+        <p>Email: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <p>ĐT (Tel.): xxxxxxxxxxxxxxxx</p>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
